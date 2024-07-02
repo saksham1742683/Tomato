@@ -17,7 +17,7 @@ export const ExploreMenu = ({ category, setCategory }) => {
           return (
             <div onClick={()=>setCategory(prev=> prev===item.menu_name?"All": item.menu_name ) } key={index} className="explore-menu-list-item">
               <img className={ category===item.menu_name? "active":"" } src={item.menu_image} alt="image" />
-              <p>{item.menu_name} </p>
+              <p className="picture">{item.menu_name} </p>
             </div>
           );
         })}
