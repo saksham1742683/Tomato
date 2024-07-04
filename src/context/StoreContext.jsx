@@ -25,6 +25,7 @@ const StoreContextProvider = (props) => {
       if (cartItems[item] > 0) {
         let itemInfo = food_list.find((product) => product.id === item);
         totalAmount += itemInfo.price * cartItems[item];
+        console.log("🚀 ~ getTotalCartAmount ~ totalAmount:", totalAmount)
       }
     }
     return totalAmount;
